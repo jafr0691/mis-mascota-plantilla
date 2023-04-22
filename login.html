@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Iniciar Sesión</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sam.css">
+  </head>
+  <body>
+
+    <div class="wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 d-flex align-items-center">
+						<p class="mb-0 phone pl-md-2">
+							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +11 222 333 444</a> 
+							<a href="#"><span class="fa fa-paper-plane mr-1"></span> contacto@4patitas.com</a>
+						</p>
+					</div>
+					<div class="col-md-6 d-flex justify-content-md-end">
+						<div class="social-media">
+			    		<p id="sam-login" class="mb-0 d-flex align-items-center text-light sam-login">
+                <a href="login.html" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only"></i></span></a>
+                <span>Iniciar Sesión</span>
+			    		</p>
+		        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	    	<a class="navbar-brand" href="index.html"><span class="flaticon-pawprint-1 mr-2"></span>4 PATITAS</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="fa fa-bars"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+	        	
+	          <li class="nav-item"><a href="galeria.html" class="nav-link">Galería</a></li>
+	          <li class="nav-item"><a href="crud_mascota.html" class="nav-link">Mis Mascotas</a></li>
+	          <li class="nav-item"><a href="crud_producto.html" class="nav-link">Productos</a></li>
+	          <li class="nav-item"><a href="crud_servicio.html" class="nav-link">Servicios</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+<div id="fw-container" class="fw-container">
+	<div class="container sam-lisu">
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li id="sam-login-tab" class="nav-item">
+      <a  class="nav-link active" data-toggle="tab" href="#login">INICIAR SESIÓN</a>
+    </li>
+    <li class="nav-item">
+      <a id="sam-signup-tab" class="nav-link" data-toggle="tab" href="#signup">REGISTRARSE</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+  	<!-- CONTENIDO TAB 1 -->
+    <div id="login" class="container tab-pane active"><br>
+    	<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group w-50">
+						<label class="label sam-form-label" for="subject">Usuario</label>
+						<input type="text" class="form-control sam-form-input" name="subject" id="subject" placeholder="tu@email.com">
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="form-group w-50">
+						<label class="label sam-form-label" for="subject">Clave</label>
+						<input type="password" class="form-control sam-form-input" name="subject" id="subject" placeholder="•••••••••">
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="form-group">
+						<input id="demo-gotomypets" type="button" value="INGRESAR" class="btn btn-primary">
+						<!-- <input type="submit" value="INGRESAR" class="btn btn-primary"> -->
+						<div class="submitting"></div>
+					</div>
+				</div>
+			</div>
+		</form>
+   </div>
+    <!-- CONTENIDO TAB 2 -->
+    <div id="signup" class="container tab-pane fade sam-tab-signup"><br>
+      <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="label sam-form-label" for="subject">Nombres</label>
+					<input type="text" class="form-control sam-form-input" name="subject" id="subject" placeholder="Nombres">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="label sam-form-label" for="subject">Apellidos</label>
+					<input type="text" class="form-control sam-form-input" name="subject" id="subject" placeholder="Apellidos">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="label sam-form-label" for="subject">DNI / Carnet de Extranjería</label>
+					<input type="number" class="form-control sam-form-input" name="subject" id="subject" placeholder="DNI">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="label sam-form-label" for="subject">Género</label><br>
+					<select class="form-control sam-form-input" id="genero">
+					<option selected disabled value="genero">-- Seleccionar --</option>
+					<option value="1">Masculino</option>
+					<option value="2">Femenino</option>
+					</select>
+				</div>
+			</div>			
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="label sam-form-label" for="subject">Distrito</label><br>
+					<select class="form-control sam-form-input" id="distrito">
+						<option selected disabled value="masculino">-- Seleccionar --</option>
+						<option value="ancon">Ancón</option>
+						<option value="ate">Ate</option>
+						<option value="barranco">Barranco</option>
+						<option value="breña">Breña</option>
+						<option value="carabayllo">Carabayllo</option>
+						<option value="chaclacayo">Chaclacayo</option>
+						<option value="chorrillos">Chorrillos</option>
+						<option value="cieneguilla">Cieneguilla</option>
+						<option value="comas">Comas</option>
+						<option value="el_agustino">El Agustino</option>
+						<option value="independencia">Independencia</option>
+						<option value="jesus_maria">Jesús María</option>
+						<option value="la_molina">La Molina</option>
+						<option value="la_victoria">La Victoria</option>
+						<option value="lima">Lima</option>
+						<option value="lince">Lince</option>
+						<option value="los_olivos">Los Olivos</option>
+						<option value="lurigancho">Lurigancho</option>
+						<option value="lurin">Lurín</option>
+						<option value="magdalena_del_mar">Magdalena del Mar</option>
+						<option value="miraflores">Miraflores</option>
+						<option value="pachacamac">Pachacamac</option>
+						<option value="pucusana">Pucusana</option>
+						<option value="pueblo_libre">Pueblo Libre</option>
+						<option value="puente_piedra">Puente Piedra</option>
+						<option value="punta_hermosa">Punta Hermosa</option>
+						<option value="punta_negra">Punta Negra</option>
+						<option value="rimac">Rímac</option>
+						<option value="san_bartolo">San Bartolo</option>
+						<option value="san_borja">San Borja</option>
+						<option value="san_isidro">San Isidro</option>
+						<option value="san_juan_de_lurigancho">San Juan de Lurigancho</option>
+						<option value="san_juan_de_miraflores">San Juan de Miraflores</option>
+						<option value="san_luis">San Luis</option>
+						<option value="san_martín_de_porres">San Martín de Porres</option>
+						<option value="san_miguel">San Miguel</option>
+						<option value="santa_anita">Santa Anita</option>
+						<option value="santa_maria_del_mar">Santa María del Mar</option>
+						<option value="santa_rosa">Santa Rosa</option>
+						<option value="santiago_de_surco">Santiago de Surco</option>
+						<option value="surquillo">Surquillo</option>
+						<option value="villa_el_salvador">Villa El Salvador</option>
+						<option value="villa_maria_del_triunfo">Villa María del Triunfo</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="label sam-form-label" for="subject">Dirección</label>
+					<input type="email" class="form-control sam-form-input" name="subject" id="subject" placeholder="Av. Tu Direccion Mz1">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="label sam-form-label" for="subject">Email</label>
+					<input type="email" class="form-control sam-form-input" name="subject" id="subject" placeholder="tu@email.com">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="label sam-form-label" for="subject">Teléfono</label>
+					<input type="phone" class="form-control sam-form-input" name="subject" id="subject" placeholder="987654321">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="label sam-form-label" for="subject">Clave</label>
+					<input type="password" class="form-control sam-form-input" name="subject" id="subject" placeholder="•••••••••">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="label sam-form-label" for="subject">Confirmar clave</label>
+					<input type="password" class="form-control sam-form-input" name="subject" id="subject" placeholder="•••••••••">
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="form-group">
+					<input type="submit" value="REGISTRARSE" class="btn btn-primary">
+					<div class="submitting"></div>
+				</div>
+			</div>
+		</div>
+	</form>
+    </div>
+  </div>
+</div>
+</div>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/sam.js"></script>
+
+    
+  </body>
+</html>

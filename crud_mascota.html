@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Mis Mascotas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sam.css">
+  </head>
+  <body>
+
+    <div class="wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 d-flex align-items-center">
+						<p class="mb-0 phone pl-md-2">
+							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +11 222 333 444</a> 
+							<a href="#"><span class="fa fa-paper-plane mr-1"></span> contacto@4patitas.com</a>
+						</p>
+					</div>
+					<div class="col-md-6 d-flex justify-content-md-end">
+						<div class="social-media">
+			    		<p id="sam-login" class="mb-0 d-flex align-items-center text-light sam-login">
+                <a href="login.html" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only"></i></span></a>
+                <span>Iniciar Sesión</span>
+			    		</p>
+		        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	    	<a class="navbar-brand" href="index.html"><span class="flaticon-pawprint-1 mr-2"></span>4 PATITAS</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="fa fa-bars"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+	          <li class="nav-item"><a href="galeria.html" class="nav-link">Galería</a></li>
+	          <li class="nav-item active"><a href="crud_mascota.html" class="nav-link">Mis Mascotas</a></li>
+	          <li class="nav-item"><a href="crud_producto.html" class="nav-link">Productos</a></li>
+	          <li class="nav-item"><a href="crud_servicio.html" class="nav-link">Servicios</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+<div id="fw-container" class="fw-container-crudmascota">
+	<div class="container">
+		<div class="row d-flex justify-content-end mb-3 mr-3">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registrarMascota">
+			  Registrar nueva mascota
+			</button>
+		</div>
+	</div>
+
+	<div class="modal fade" id="registrarMascota" tabindex="-1" role="dialog" aria-labelledby="titRegistrarMascota" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered sam-crudmascota" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="titRegistrarMascota">Registra a tu mascota</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body sam-modal-body">
+	        <div class="container sam-lisu">
+	<!-- <h2 class="sam-h2-white">Registra a tu mascota</h2> -->
+  	<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="form-group">
+					<label class="label sam-form-label" for="subject">Nombre</label>
+					<input type="text" class="form-control sam-form-input" name="subject" id="subject" placeholder="Nombre de tu mascota">
+				</div>
+			</div>		
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="label sam-form-label" for="subject">Tipo</label><br>
+					<select class="form-control sam-form-input" id="tipo">
+						<option selected disabled value="masculino">-- Seleccionar --</option>
+						<option value="1">Perro</option>
+						<option value="2">Gato</option>
+						<option value="3">Ave</option>
+						<option value="4">Otros</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="label sam-form-label" for="subject">Raza</label><br>
+					<select class="form-control sam-form-input" id="tipo">
+						<option selected disabled value="masculino">-- Seleccionar --</option>
+						<option value="1">Caniche</option>
+						<option value="2">Labrador</option>
+						<option value="3">Pitbull</option>
+						<option value="4">Shih Tzu</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="label sam-form-label" for="subject">Género</label><br>
+					<select class="form-control sam-form-input" id="genero">
+					<option selected disabled value="genero">-- Seleccionar --</option>
+					<option value="3">Macho</option>
+					<option value="4">Hembra</option>
+					</select>
+				</div>
+			</div>	
+			<div class="col-md-6">
+				<div class="form-group">
+					<label class="label sam-form-label" for="subject">Fecha de nacimiento</label><br>
+					<input class="sam-date-input" type="date" id="fecha_nac" name="fecha_nac"  min="2006-01-01" max="2021-04-24">
+				</div>
+			</div>
+			<!-- <div class="col-md-12">
+				<div class="form-group">
+					<input type="submit" value="REGISTRAR" class="btn btn-primary">
+					<div class="submitting"></div>
+				</div>
+			</div> -->
+		</div>
+	</form>
+</div>
+	      </div>
+	      <div class="modal-footer sam-modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        <button type="button" class="btn btn-primary">Registrar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="container sam-table sam-crudmascota-table">
+		<div class="col-md-12">
+			<table class="table">
+			    <thead class="thead-dark">
+			      <tr>
+			        <th>Nombre de tu mascota</th>
+			        <th>Tipo</th>
+			        <th>Raza</th>
+			        <th>Género</th>
+			        <th>Fecha de nacimiento</th>
+			        <th>Edad</th>
+			        <th></th>
+			        <th></th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>Boo</td>
+			        <td>Perro</td>
+			        <td>Caniche</td>
+			        <td>Macho</td>
+			        <td>02/11/2012</td>
+			        <td>9 años</td>
+			        <td><button type="button" class="btn btn-info sam-crudmascota-btn">EDITAR</button></td>
+			        <td><button type="button" class="btn btn-danger sam-crudmascota-btn">ELIMINAR</button></td>
+			      </tr>
+			      <tr>
+			        <td>Manolo</td>
+			        <td>Gato</td>
+			        <td>Burmés</td>
+			        <td>Macho</td>
+			        <td>05/05/2015</td>
+			        <td>5 años</td>
+			        <td><button type="button" class="btn btn-info sam-crudmascota-btn">EDITAR</button></td>
+			        <td><button type="button" class="btn btn-danger sam-crudmascota-btn">ELIMINAR</button></td>
+			      </tr>
+			      <tr>
+			        <td>Lorenza</td>
+			        <td>Ave</td>
+			        <td>Loro</td>
+			        <td>Hembra</td>
+			        <td>24/02/2020</td>
+			        <td>1 año</td>
+			        <td><button type="button" class="btn btn-info sam-crudmascota-btn">EDITAR</button></td>
+			        <td><button type="button" class="btn btn-danger sam-crudmascota-btn">ELIMINAR</button></td>
+			      </tr>
+			    </tbody>
+			</table>
+		</div>
+	</div>
+	
+</div>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/sam.js"></script>
+
+    
+  </body>
+</html>
